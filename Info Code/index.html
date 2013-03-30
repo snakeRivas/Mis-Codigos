@@ -1,0 +1,159 @@
+<!html>
+<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="jquery/config.js">
+<!-- jQuery (required) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script src="jquery/jquery-1.8.3.min.js" type=text/javascript></script>
+	
+
+	<!-- Anything Slider optional plugins -->
+	<script src="js/jquery.easing.1.2.js"></script>
+	<!-- http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js -->
+	<script src="js/swfobject.js"></script>
+
+	<!-- Demo stuff -->
+	<link rel="stylesheet" href="demos/css/page.css" media="screen">
+	<script src="demos/js/jquery.jatt.min.js"></script>
+
+	<!-- AnythingSlider -->
+	<link rel="stylesheet" href="css/anythingslider.css">
+	<script src="js/jquery.anythingslider.js"></script>
+
+	<!-- AnythingSlider video extension; optional, but needed to control video pause/play -->
+	<script src="js/jquery.anythingslider.video.js"></script>
+
+	<script>	
+	window.alert("Sean Bienvenidos a Infocode...");
+
+</script>
+
+	<!-- Ideally, add the stylesheet(s) you are going to use here,
+	 otherwise they are loaded and appended to the <head> automatically and will over-ride the IE stylesheet below -->
+	<link rel="stylesheet" href="css/theme-metallic.css">
+	<link rel="stylesheet" href="css/theme-minimalist-round.css">
+	<link rel="stylesheet" href="css/theme-minimalist-square.css">
+	<link rel="stylesheet" href="css/theme-construction.css">
+	<link rel="stylesheet" href="css/theme-cs-portfolio.css">
+
+	<script>
+		// Set up Sliders
+		// **************
+		$(function(){
+
+			$('#slider1').anythingSlider({
+				theme           : 'metallic',
+				easing          : 'easeInOutBack',
+				navigationFormatter : function(index, panel){
+					return ['Slab', 'Parking Lot', 'Drive', 'Glorius Dawn', 'Bjork?', 'Traffic Circle'][index - 1];
+				},
+				onSlideComplete : function(slider){
+					// alert('Welcome to Slide #' + slider.currentPage);
+				}
+			});
+
+			$('#slider2').anythingSlider({
+				mode                : 'f',   // fade mode - new in v1.8!
+				resizeContents      : false, // If true, solitary images/objects in the panel will expand to fit the viewport
+				navigationSize      : 3,     // Set this to the maximum number of visible navigation tabs; false to disable
+				navigationFormatter : function(index, panel){ // Format navigation labels with text
+					return ['Recipe', 'Quote', 'Image', 'Quote #2', 'Image #2'][index - 1];
+				},
+				onSlideBegin: function(e,slider) {
+					// keep the current navigation tab in view
+					slider.navWindow( slider.targetPage );
+				}
+			});
+
+			// tooltips for first demo
+			$.jatt();
+
+		});
+	</script>
+	
+
+<head>
+<title>Info Code</title>
+</head>
+
+<header>
+	<img src="img/portada_face.jpg">
+		<div class="navbar navbar-fixed-top" fixed_managed="2" style="top: 0px; ">
+	<div class="container">
+	<div class="navbar-inner">
+		<a class="brand" href="index.html">Infocode</a>
+		<ul class="nav">
+			<li class="active">
+				<a href="index.html">Inicio</a>
+			<li>
+				<a href="servicios.html">Servicios</a>
+			<li>
+				<a href="blog.html">Blog</a>
+			<li>
+				<a href="contacto.html">Contacto</a>
+			</li>
+			</li>	
+			</li>
+			</li>
+		</ul>
+</div>		
+</div>	
+</div>
+</header>
+<iframe src="https://www.facebook.com/pages/Pc-Health-Solutions/490439630996171?ref=hl" scrolling="no" frameborder="0" style="border:0; width:50%; height:25%"></iframe>
+
+<body id="main">
+	<h2>Bienvenidos a Nuestro Sitio Oficial.</h2>
+	<div class="hero-unit">
+		
+				<a class="btn btn-primary btn-large" a="" href="servicios.html">Ver Servicios</a>
+
+	<!-- AnythingSlider #1 -->
+			<ul id="slider1">
+
+
+				<li class="panel5" position:absolute;>
+					<div>
+						<img src="img/redes.jpg" alt="" style="width: 100%; height: 100%; ">
+					</div>
+				</li>
+
+				<li class="panel5" position:absolute;>
+					<div>
+						<img src="img/red1.jpg" alt="" style="width: 100%; height: 100%; ">
+					</div>
+				</li>
+
+				<li class="panel5" position:absolute;>
+					<div>
+						<div>
+						<img src="img/laptop.jpg" alt="" style="width: 100%; height: 100%; ">
+					</div>
+				</li>
+
+				<li class="panel5" position:absolute;>
+					<div>
+						<img src="img/cibernetico.jpg" alt="" style="width: 100%; height: 100%; ">
+					</div>
+				</li>
+
+				<li class="panel5" position:absolute;>
+					<div>
+						<img src="img/http.jpg" alt="" style="width: 100%; height: 100%; ">
+					</div>
+				</li>
+
+
+			</ul>  <!-- END AnythingSlider #1 -->  </div>
+
+		</div>
+
+<footer>Infocode Derechos Reservados 2012</footer>
+</body>
+</html>
